@@ -1,0 +1,27 @@
+[11:08:33] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[11:10:34] [Server thread/INFO]: Loading properties
+[11:10:34] [Server thread/INFO]: Default game type: SURVIVAL
+[11:10:34] [Server thread/INFO]: Generating keypair
+[11:10:34] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:10:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:10:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:10:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:10:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:12:01] [Server thread/INFO]: Preparing level "world"
+[11:12:02] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.NoClassDefFoundError: net/minecraft/util/MinecraftError
+	at mod.steamnsteel.world.WorldGen.OnWorldStarted(WorldGen.java:92) ~[WorldGen.class:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_591_WorldGen_OnWorldStarted_Load.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[ASMEventHandler.class:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138) ~[EventBus.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:230) ~[MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:258) ~[lt.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:387) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685) [li.class:?]
+Caused by: java.lang.ClassNotFoundException: net.minecraft.util.MinecraftError
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[launchwrapper-1.11.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	... 8 more
+Caused by: java.lang.NullPointerException
+[11:12:02] [Server thread/ERROR]: This crash report has been saved to: D:\Servers\Forge3\.\crash-reports\crash-2015-05-11_11.12.02-server.txt
