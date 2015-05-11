@@ -1,0 +1,2 @@
+# logs
+Minecraft Error Logs
