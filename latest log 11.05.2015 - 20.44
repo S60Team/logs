@@ -1,0 +1,33 @@
+[20:39:42] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[20:40:52] [Server thread/INFO]: Loading properties
+[20:40:52] [Server thread/INFO]: Default game type: SURVIVAL
+[20:40:52] [Server thread/INFO]: Generating keypair
+[20:40:52] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:40:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:40:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:40:52] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:40:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:42:01] [Server thread/INFO]: Preparing level "world"
+[20:42:02] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.NoClassDefFoundError: org/lwjgl/util/ReadableDimension
+	at mod.steamnsteel.world.WorldGen.OnWorldStarted(WorldGen.java:92) ~[WorldGen.class:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_591_WorldGen_OnWorldStarted_Load.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[ASMEventHandler.class:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:138) ~[EventBus.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:230) ~[MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:258) ~[lt.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:387) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685) [li.class:?]
+Caused by: java.lang.ClassNotFoundException: org.lwjgl.util.ReadableDimension
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_11]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_11]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_11]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_11]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:106) ~[launchwrapper-1.11.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_11]
+	... 8 more
+[20:42:02] [Server thread/ERROR]: This crash report has been saved to: D:\Servers\Forge3\.\crash-reports\crash-2015-05-11_20.42.02-server.txt
